@@ -1,0 +1,18 @@
+#!/bin/bash
+if [[ $EUID -ne 0 ]];
+then
+	echo "You must be a root user" 2>&1 exit 1
+
+else
+	cd ~
+	apt-get install nano
+	apt-get install make
+	apt-get install gcc-arm-none-eabi
+	apt-get install gdb-arm-none-eabi
+	apt-get install openocd
+	apt-get install dh-autoreconf
+	apt-get install libusb-1.0-0-dev
+	apt-get install pkg-config
+
+	git clone https://github.com/texane/stlink.git
+fi

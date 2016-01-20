@@ -1,0 +1,8 @@
+#!/bin/bash
+#Port = 4242
+build_stm32
+st-flash erase &&
+
+/root/stlink/st-util &
+sleep 3 &&
+arm-none-eabi-gdb /root/public/build/stm32f3-discovery-oma_template/main.elf --command=/root/public/build/gdb_commands

@@ -1,0 +1,17 @@
+#!/bin/bash
+if [[ $EUID -ne 0 ]];
+then
+	echo "You must be a root user" 2>&1 exit 1
+
+else
+	cd ~/stlink
+	./autogen.sh
+	./configure
+	make clean
+	make &&
+	cp /root/public/build/build_stm32 /usr/bin/build_stm32
+	cp /root/public/build/edit_stm32 /usr/bin/edit_stm32
+	cp /root/public/build/gdb_stm32 /usr/bin/gdb_stm32
+	cp /root/public/build/flash /usr/bin/flash
+
+fi
