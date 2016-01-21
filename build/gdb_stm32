@@ -1,8 +1,8 @@
 #!/bin/bash
 #Port = 4242
 build_stm32
-st-flash erase &&
+flash &&
 
-/root/stlink/st-util &
-sleep 3 &&
+openocd -f /usr/share/openocd/scripts/interface/stlink-v2.cfg -f /usr/share/openocd/scripts/board/stm32f3discovery.cfg &
+sleep 1 &&
 arm-none-eabi-gdb /root/public/build/stm32f3-discovery-oma_template/main.elf --command=/root/public/build/gdb_commands

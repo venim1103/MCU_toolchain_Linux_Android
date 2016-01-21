@@ -9,10 +9,16 @@ else
 	apt-get install make
 	apt-get install gcc-arm-none-eabi
 	apt-get install gdb-arm-none-eabi
-	apt-get install openocd
 	apt-get install dh-autoreconf
 	apt-get install libusb-1.0-0-dev
 	apt-get install pkg-config
+	apt-get install htop
+
+	apt-get install libusb-dev
+	apt-get install libftdi1
+	apt-get install libftdi-dev
+
+	apt-get install openocd
 
 	git clone https://github.com/texane/stlink.git
 fi

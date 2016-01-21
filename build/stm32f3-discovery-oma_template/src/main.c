@@ -10,7 +10,7 @@ void InitPeripheralDevices();
 
 volatile uint32_t TickCount = 0;
 volatile uint32_t DelayCount = 0;
-uint32_t delay_value = 500;
+uint32_t delay_value = 100;
 
 void SysTick_Handler()
 {
