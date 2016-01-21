@@ -12,6 +12,7 @@ else
 		cp /root/public/build/edit_stm32 /usr/bin/edit_stm32
 		cp /root/public/build/gdb_stm32 /usr/bin/gdb_stm32
 		cp /root/public/build/flash /usr/bin/flash
+		cp /root/public/build/cp_stm32 /usr/bin/cp_stm32
 else
 		cd ~/stlink
 		./autogen.sh
@@ -23,5 +24,6 @@ else
 		cp /root/public/build/edit_stm32 /usr/bin/edit_stm32
 		cp /root/public/build/gdb_stm32 /usr/bin/gdb_stm32
 		cp /root/public/build/flash /usr/bin/flash
+		cp /root/public/build/cp_stm32 /usr/bin/cp_stm32
 	fi
 fi

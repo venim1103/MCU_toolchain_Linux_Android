@@ -1,0 +1,2 @@
+#!/bin/bash
+cp /mnt/mount/main.c /root/public/build/stm32f3-discovery-oma_template/src/main.c
