@@ -1,3 +1,0 @@
-#!/bin/bash
-nano /root/public/build/stm32f3-discovery-oma_template/src/main.c
-

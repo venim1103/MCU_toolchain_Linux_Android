@@ -1,0 +1,4 @@
+#!/bin/bash
+cd /root/public/stm32/stm32f3-discovery-oma_template/
+make clean
+make

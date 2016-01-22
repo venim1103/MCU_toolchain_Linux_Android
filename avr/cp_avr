@@ -1,0 +1,2 @@
+#!/bin/bash
+cp /mnt/mount/avr/main.c /root/public/avr/main.c

@@ -1,4 +1,0 @@
-#!/bin/bash
-cd /root/public/build/stm32f3-discovery-oma_template/
-make clean
-make

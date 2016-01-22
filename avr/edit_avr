@@ -1,0 +1,3 @@
+#!/bin/bash
+nano /root/public/avr/main.c
+

@@ -12,7 +12,7 @@ volatile uint32_t TickCount = 0;
 volatile uint32_t DelayCount = 0;
 uint32_t delay_value = 100;
 
-void SysTick_Handler()
+void SysTick_Handler(void)
 {
         TickCount++;
         DelayCount--;
@@ -30,7 +30,18 @@ int main()
         
         while (1)
         {
-    /* Clockwise rotation in 50ms steps */
+    /* Clockwise rotation in 50ms steps*/
+                STM_EVAL_LEDToggle(LED10);
+                Delay(delay_value);
+                STM_EVAL_LEDToggle(LED9);
+                Delay(delay_value);
+                STM_EVAL_LEDToggle(LED7);
+                Delay(delay_value);
+               STM_EVAL_LEDToggle(LED5);
+                Delay(delay_value);
+               STM_EVAL_LEDToggle(LED3);
+                Delay(delay_value);
+
                 STM_EVAL_LEDToggle(LED3);
                 Delay(delay_value);
                 STM_EVAL_LEDToggle(LED5);
@@ -41,13 +52,38 @@ int main()
                 Delay(delay_value);
                 STM_EVAL_LEDToggle(LED10);
                 Delay(delay_value);
+
+               STM_EVAL_LEDToggle(LED3);
+                Delay(delay_value);
+                STM_EVAL_LEDToggle(LED4);
+                Delay(delay_value);
+                STM_EVAL_LEDToggle(LED6);
+                Delay(delay_value);
+               STM_EVAL_LEDToggle(LED8);
+                Delay(delay_value);
+               STM_EVAL_LEDToggle(LED10);
+                Delay(delay_value);
+
+                STM_EVAL_LEDToggle(LED10);
+                Delay(delay_value);
                 STM_EVAL_LEDToggle(LED8);
                 Delay(delay_value);
                 STM_EVAL_LEDToggle(LED6);
                 Delay(delay_value);
-                STM_EVAL_LEDToggle(LED4);
+               STM_EVAL_LEDToggle(LED4);
                 Delay(delay_value);
+               STM_EVAL_LEDToggle(LED3);
+                Delay(delay_value);
+
+        if(STM_EVAL_PBGetState(0) == 1){
+                Delay(1000);
         }
+        else{
+
+        };
+
+
+        };
 }
 
 void InitPeripheralDevices()
@@ -69,5 +105,8 @@ void InitPeripheralDevices()
   STM_EVAL_LEDInit(LED8);
   STM_EVAL_LEDInit(LED9);
   STM_EVAL_LEDInit(LED10);
+
+  STM_EVAL_PBInit(0, BUTTON_MODE_GPIO);
+
 }
 

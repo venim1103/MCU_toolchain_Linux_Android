@@ -1,0 +1,4 @@
+#!/bin/bash
+cd /root/public/avr/
+make clean
+make

@@ -5,4 +5,4 @@ flash &&
 
 openocd -f /usr/share/openocd/scripts/interface/stlink-v2.cfg -f /usr/share/openocd/scripts/board/stm32f3discovery.cfg &
 sleep 1 &&
-arm-none-eabi-gdb /root/public/build/stm32f3-discovery-oma_template/main.elf --command=/root/public/build/gdb_commands
+arm-none-eabi-gdb /root/public/stm32/stm32f3-discovery-oma_template/main.elf --command=/root/public/stm32/gdb_commands

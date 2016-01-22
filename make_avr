@@ -1,0 +1,19 @@
+#!/bin/bash
+if [[ $EUID -ne 0 ]];
+then
+	echo "You must be a root user" 2>&1 exit 1
+
+else
+	cd ~
+
+	apt-get install gcc-avr
+	apt-get install gdb-avr
+	apt-get install dfu-programmer
+	apt-get install avarice
+	apt-get install avr-libc #You need atleast version 1.8.1+Atmel -> >= Ubuntu Vivid!
+
+	cp /root/public/avr/build_avr /usr/bin/build_avr
+	cp /root/public/avr/edit_avr /usr/bin/edit_avr
+	cp /root/public/avr/cp_avr /usr/bin/cp_avr
+
+fi
