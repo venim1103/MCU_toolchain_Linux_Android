@@ -7,6 +7,8 @@ inside a Linux Ubuntu environment (mainly for running the compilation environmen
 
 ## Tool made by other people included in this repository: 
 
+/
+
 	**szczys'**s STM32F0-Discovery Application Template toolchain:
 		** [stm32f0-discovery-basic-template](https://github.com/szczys/stm32f0-discovery-basic-template.git)
 
