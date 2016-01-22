@@ -1,5 +1,9 @@
+# EDITED FROM:
+# Source: winavr.sourceforge.net/
+#
+#
 # Hey Emacs, this is a -*- makefile -*-
-
+#
 # AVR-GCC Makefile template, derived from the WinAVR template (which
 # is public domain), believed to be neutral to any flavor of "make"
 # (GNU make, BSD make, SysV make)
@@ -8,7 +12,8 @@
 MCU = atxmega128b1
 FORMAT = ihex
 TARGET = main
-SRC = $(TARGET).c my_lcd_c.c
+DEPENDENCY = my_lcd_c
+SRC = $(TARGET).c $(DEPENDENCY).c
 ASRC = 
 OPT = s
 

@@ -20,5 +20,8 @@ else
 
 	apt-get install openocd
 
-	git clone https://github.com/texane/stlink.git
+	git clone https://github.com/texane/stlink.git &&
+
+	git clone https://github.com/szczys/stm32f0-discovery-basic-template.git
+	
 fi
