@@ -7,13 +7,13 @@ inside a Linux Ubuntu environment (mainly for running the compilation environmen
 
 ## Tool made by other people included in this repository: 
 
-	* **szczys'**s STM32F0-Discovery Application Template toolchain:
+	**szczys'**s STM32F0-Discovery Application Template toolchain:
 		** [stm32f0-discovery-basic-template](https://github.com/szczys/stm32f0-discovery-basic-template.git)
 
-	* **texane's** STLINK: stm32 discovery line linux programmer:
+	**texane's** STLINK: stm32 discovery line linux programmer:
 		** [stlink](https://github.com/texane/stlink.git)
 	
-	* **(Anatoly Sokolov, Eric Weddington (admin), Joerg Wunsch (admin), Paulo Marques and SprinterSB (admin))**'s WinAVR:
+	**(Anatoly Sokolov, Eric Weddington (admin), Joerg Wunsch (admin), Paulo Marques and SprinterSB (admin))**'s WinAVR:
 		** [WinAVR](http://sourceforge.net/projects/winavr/)
 
 		
