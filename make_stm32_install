@@ -10,21 +10,19 @@ else
 		cp /root/public/stm32/flash_stm32 /usr/bin/flash_stm32
 		cp /root/public/stm32/cp_stm32 /usr/bin/cp_stm32
 
-
-		
 	if hash st-flash 2>/dev/null;
 	then
 		echo >&2 "Stlink already installed, updating binaries."
 	else
 
-#Installing stlink	
+#Installing stlink
 		cd ~/stlink
 		./autogen.sh
 		./configure
-		make clean
 		make
+		make install
 
-#Making a new "Workspace" folder called Workspace.		
-		cp /root/public/stm32f3-discovery_template /root/public/stm32/Workspace
+#Making a new "Workspace" folder called Workspace.
+		cp -avr /root/stm32f3-discovery-basic-template /root/public/stm32/Workspace
 	fi
 fi

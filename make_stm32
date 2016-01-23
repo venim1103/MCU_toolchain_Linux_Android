@@ -5,23 +5,23 @@ then
 
 else
 	cd ~
-	apt-get install nano
-	apt-get install make
-	apt-get install gcc-arm-none-eabi
-	apt-get install gdb-arm-none-eabi
-	apt-get install dh-autoreconf
-	apt-get install libusb-1.0-0-dev
-	apt-get install pkg-config
-	apt-get install htop
+	apt-get install -y nano
+	apt-get install -y make
+	apt-get install -y gcc-arm-none-eabi
+	apt-get install -y gdb-arm-none-eabi
+	apt-get install -y dh-autoreconf
+	apt-get install -y libusb-1.0-0-dev
+	apt-get install -y pkg-config
+	apt-get install -y htop
 
-	apt-get install libusb-dev
-	apt-get install libftdi1
-	apt-get install libftdi-dev
+	apt-get install -y libusb-dev
+	apt-get install -y libftdi1
+	apt-get install -y libftdi-dev
 
-	apt-get install openocd
+	apt-get install -y openocd
 
 	git clone https://github.com/texane/stlink.git &&
 
-	git clone https://github.com/szczys/stm32f0-discovery-basic-template.git
+	git clone https://github.com/mblythe86/stm32f3-discovery-basic-template.git
 	
 fi

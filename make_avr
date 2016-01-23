@@ -6,11 +6,11 @@ then
 else
 	cd ~
 
-	apt-get install gcc-avr
-	apt-get install gdb-avr
-	apt-get install dfu-programmer
-	apt-get install avarice
-	apt-get install avr-libc #You need atleast version 1.8.1+Atmel -> >= Ubuntu Vivid!
+	apt-get install -y gcc-avr
+	apt-get install -y gdb-avr
+	apt-get install -y dfu-programmer
+	apt-get install -y avarice
+	apt-get install -y avr-libc #You need atleast version 1.8.1+Atmel -> >= Ubuntu Vivid!
 
 	cp /root/public/avr/build_avr /usr/bin/build_avr
 	cp /root/public/avr/edit_avr /usr/bin/edit_avr
