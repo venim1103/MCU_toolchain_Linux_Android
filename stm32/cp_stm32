@@ -1,2 +1,2 @@
 #!/bin/bash
-cp /mnt/mount/main.c /root/public/stm32/Workspace/src/main.c
+cp /mnt/mount/stm32/main.c /root/public/stm32/Workspace/src/main.c
