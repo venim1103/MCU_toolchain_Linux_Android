@@ -1,0 +1,4 @@
+#!/bin/bash
+cd /root/public/stm32vl/Workspace
+st-flash erase -1
+st-flash write -1 /root/public/stm32vl/Workspace/main.bin 0x08000000

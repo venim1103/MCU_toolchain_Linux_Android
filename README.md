@@ -10,6 +10,9 @@ inside a Linux Ubuntu environment (mainly for running the compilation environmen
 mblythe86's STM32F3-Discovery Application Template toolchain:
 	https://github.com/mblythe86/stm32f3-discovery-basic-template.git
 
+h0rr0rrdrag0n's STM32VL-Discovery Application Template toolchain:
+	https://github.com/h0rr0rrdrag0n/stm32vldiscovery-linux-template.git
+
 texane's STLINK: stm32 discovery line linux programmer:
 	https://github.com/texane/stlink.git
 	
@@ -38,7 +41,7 @@ Paulo Marques and SprinterSB (admin))'s WinAVR:
 
 5. 
 	Set up a mount folder called "mount" and add it to usermounts.
-		- Add two folders called "avr" and "stm32" inside the mount folder.
+		- Add folders called "avr", "stm32" and "stm32vl" inside the mount folder.
 
 6. 
 	Run the Linux. (proceed into next part)
@@ -67,6 +70,10 @@ Paulo Marques and SprinterSB (admin))'s WinAVR:
 
 	./make_stm32_install 
 
+	./make_stm32vl
+
+	./make_stm32vl_install
+
 
 That's it!
 
@@ -74,7 +81,7 @@ That's it!
 ##Usage instructions
 
 All uploaded files you edit, build and flash into your machine should be put
-into the correct avr or stm32 folder and be named "main.c".
+into the correct avr, stm32 or stm32vl folder and be named "main.c".
 
 
 Device:	Command
@@ -91,8 +98,11 @@ stm32:
 	edit_stm32
 
 
+stm32vl: 
+	edit_stm32vl
 
-- Copy a "main.c" file from the mounted folder (/mount/avr or /mount/stm32) 
+
+- Copy a "main.c" file from the mounted folder (/mount/avr or /mount/stm32 or /mount/stm32vl) 
 With this command you can edit the file inside your Android environment and then use copy
 commands to upload it to your Linux environment for building and flashing.
 
@@ -104,8 +114,11 @@ stm32:
 	cp_stm32
 
 
+stm32vl:
+	cp_stm32vl
 
-- Build the main.c file for the appropriate device (initially set up for stm32f3discovery
+
+- Build the main.c file for the appropriate device (initially set up for stm32f3discovery, stm32vldiscovery
 and atxmega128b1 devices. You can edit the corresponding Makefiles for other devices)
 
 
@@ -118,9 +131,12 @@ stm32:
 	build_stm32
 
 
+stm32vl:
+	build_stm32vl
+
 
 - Flash the .hex files into the devices (you can edit the flashing commands to be used
-with different devices. Initially set up for stm32f3discovery and atxmega128b1 boards)
+with different devices. Initially set up for stm32f3discovery, stm32vldiscovery and atxmega128b1 boards)
 
 
 avr:
@@ -130,6 +146,9 @@ avr:
 stm32:
 	flash_stm32
 
+
+stm32vl:
+	flash_stm32vl
 
 
 

@@ -1,0 +1,6 @@
+#!/bin/bash
+cd /root/public/stm32vl/Workspace/
+rm -f /root/public/stm32vl/Workspace/main.bin
+make clean
+make
+arm-none-eabi-objcopy -O binary /root/public/stm32vl/Workspace/stm32vldiscovery-linux-template.elf /root/public/stm32vl/Workspace/main.bin

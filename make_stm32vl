@@ -1,0 +1,16 @@
+#!/bin/bash
+if [[ $EUID -ne 0 ]];
+then
+	echo "You must be a root user" 2>&1 exit 1
+
+else
+	cd ~
+	git clone https://github.com/h0rr0rrdrag0n/stm32vldiscovery-linux-template.git
+	mkdir /root/stm32vl/Workspace
+	cp -avr /root/stm32vldiscovery-linux-template /root/public/stm32vl/Workspace/
+	cd /root/public/stm32vl/Workspace
+	sed -i 's/TOOLS_PATH=/#/g' Makefile
+	sed -i 's/4.9.3/ /g' Makefile
+	sed -i 's/-$(TOOLS_VERSION)/ /g' Makefile
+
+fi
