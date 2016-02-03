@@ -10,6 +10,9 @@ else
 	cp -avr /root/stm32vldiscovery-linux-template /root/public/stm32vl/Workspace/
 	cd /root/public/stm32vl/Workspace
 	sed -i 's/TOOLS_PATH=/#/g' Makefile
+	sed -i 's/CC=$(TOOLS_PATH)/\/usr/g' Makefile
+	sed -i 's/AS=$(TOOLS_PATH)/\/usr/g' Makefile
+	sed -i 's/SIZE=$(TOOLS_PATH)/\/usr/g' Makefile
 	sed -i 's/4.9.3/ /g' Makefile
 	sed -i 's/-$(TOOLS_VERSION)/ /g' Makefile
 
