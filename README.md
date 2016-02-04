@@ -64,6 +64,11 @@ Paulo Marques and SprinterSB (admin))'s WinAVR:
 
 
 3. 
+	./INSTALL
+
+
+OR
+
 	./make_avr 
 
 	./make_stm32 

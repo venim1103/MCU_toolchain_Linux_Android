@@ -4,16 +4,22 @@ then
 	echo "You must be a root user" 2>&1 exit 1
 
 else
-	cd ~
-	git clone https://github.com/h0rr0rrdrag0n/stm32vldiscovery-linux-template.git
-	mkdir /root/stm32vl/Workspace
-	cp -avr /root/stm32vldiscovery-linux-template /root/public/stm32vl/Workspace/
-	cd /root/public/stm32vl/Workspace
-	sed -i 's/TOOLS_PATH=/#/g' Makefile
-	sed -i 's/CC=$(TOOLS_PATH)/CC=$(TOOLS_PATH)\/usr/g' Makefile
-	sed -i 's/AS=$(TOOLS_PATH)/AS=$(TOOLS_PATH)\/usr/g' Makefile
-	sed -i 's/SIZE=$(TOOLS_PATH)/SIZE=$(TOOLS_PATH)\/usr/g' Makefile
-	sed -i 's/4.9.3/ /g' Makefile
-	sed -i 's/-$(TOOLS_VERSION)/ /g' Makefile
+        if hash flash_stm32 2>/dev/null;
+        then
+		cd ~
+		git clone https://github.com/h0rr0rrdrag0n/stm32vldiscovery-linux-template.git
+		cp -avr /root/stm32vldiscovery-linux-template /root/public/stm32vl/Workspace/
+		cd /root/public/stm32vl/Workspace
+		sed -i 's/TOOLS_PATH=/#/g' Makefile
+		sed -i 's/CC=$(TOOLS_PATH)/CC=$(TOOLS_PATH)\/usr/g' Makefile
+		sed -i 's/AS=$(TOOLS_PATH)/AS=$(TOOLS_PATH)\/usr/g' Makefile
+		sed -i 's/SIZE=$(TOOLS_PATH)/SIZE=$(TOOLS_PATH)\/usr/g' Makefile
+		sed -i 's/4.9.3/ /g' Makefile
+		sed -i 's/-$(TOOLS_VERSION)/ /g' Makefile
+        else
+		echo "Install stm32 first (by doing commands ./make_stm32 and ./make_stm32_install OR ./INSTALL  !" 2>&1 exit 1
+        fi
+
+
 
 fi

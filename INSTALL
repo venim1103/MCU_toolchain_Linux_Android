@@ -1,0 +1,10 @@
+#!/bin/bash
+./make_avr
+
+./make_stm32
+
+./make_stm32_install
+
+./make_stm32vl
+
+./make_stm32vl_install
