@@ -10,6 +10,8 @@ else
 		cp /root/MCU_toolchain_Linux_Android/stm32/flash_stm32 /usr/bin/flash_stm32
 		cp /root/MCU_toolchain_Linux_Android/stm32/cp_stm32 /usr/bin/cp_stm32
 
+		cp -avr /root/stm32f3-discovery-basic-template /root/MCU_toolchain_Linux_Android/stm32/Workspace
+
 	if hash st-flash 2>/dev/null;
 	then
 		echo >&2 "Stlink already installed, updating binaries."

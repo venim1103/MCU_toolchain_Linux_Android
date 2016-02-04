@@ -58,7 +58,7 @@ Paulo Marques and SprinterSB (admin))'s WinAVR:
 
 
 2. 
-	git clone https://github.com/venim1103/MCU_toolchain_Linux_Android
+	git clone https://github.com/venim1103/MCU_toolchain_Linux_Android.git
 
 	cd MCU_toolchain_Linux_Android
 
