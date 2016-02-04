@@ -1,4 +1,4 @@
-#Public repository for MCU development in Ubuntu Linux (on Android)
+#Repository for MCU development in Ubuntu Linux (on Android)
 
 This repository is a simple (=crude) implementation of ready made tools by other people. 
 The idea was to make some simple scripts to install and use different MCU building and flashing tools 
@@ -60,7 +60,7 @@ Paulo Marques and SprinterSB (admin))'s WinAVR:
 2. 
 	git clone https://github.com/venim1103/public 
 
-	cd public
+	cd MCU_toolchain_Linux_Android
 
 
 3. 
@@ -164,26 +164,3 @@ gdb_stm32 (and a not yet implemented gdb_avr) commands...
 
 
 ...
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

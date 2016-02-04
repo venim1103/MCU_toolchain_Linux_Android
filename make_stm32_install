@@ -4,11 +4,11 @@ then
 	echo "You must be a root user" 2>&1 exit 1
 
 else
-		cp /root/public/stm32/build_stm32 /usr/bin/build_stm32
-		cp /root/public/stm32/edit_stm32 /usr/bin/edit_stm32
-		cp /root/public/stm32/gdb_stm32 /usr/bin/gdb_stm32
-		cp /root/public/stm32/flash_stm32 /usr/bin/flash_stm32
-		cp /root/public/stm32/cp_stm32 /usr/bin/cp_stm32
+		cp /root/MCU_toolchain_Linux_Android/stm32/build_stm32 /usr/bin/build_stm32
+		cp /root/MCU_toolchain_Linux_Android/stm32/edit_stm32 /usr/bin/edit_stm32
+		cp /root/MCU_toolchain_Linux_Android/stm32/gdb_stm32 /usr/bin/gdb_stm32
+		cp /root/MCU_toolchain_Linux_Android/stm32/flash_stm32 /usr/bin/flash_stm32
+		cp /root/MCU_toolchain_Linux_Android/stm32/cp_stm32 /usr/bin/cp_stm32
 
 	if hash st-flash 2>/dev/null;
 	then
@@ -23,6 +23,6 @@ else
 		make install
 
 #Making a new "Workspace" folder called Workspace.
-		cp -avr /root/stm32f3-discovery-basic-template /root/public/stm32/Workspace
+		cp -avr /root/stm32f3-discovery-basic-template /root/MCU_toolchain_Linux_Android/stm32/Workspace
 	fi
 fi

@@ -12,9 +12,9 @@ else
 	apt-get install -y avarice
 	apt-get install -y avr-libc #You need atleast version 1.8.1+Atmel -> >= Ubuntu Vivid!
 
-	cp /root/public/avr/build_avr /usr/bin/build_avr
-	cp /root/public/avr/edit_avr /usr/bin/edit_avr
-	cp /root/public/avr/cp_avr /usr/bin/cp_avr
-	cp /root/public/avr/flash_avr /usr/bin/flash_avr
+	cp /root/MCU_toolchain_Linux_Android/avr/build_avr /usr/bin/build_avr
+	cp /root/MCU_toolchain_Linux_Android/avr/edit_avr /usr/bin/edit_avr
+	cp /root/MCU_toolchain_Linux_Android/avr/cp_avr /usr/bin/cp_avr
+	cp /root/MCU_toolchain_Linux_Android/avr/flash_avr /usr/bin/flash_avr
 
 fi

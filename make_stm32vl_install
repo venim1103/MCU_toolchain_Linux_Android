@@ -4,9 +4,9 @@ then
 	echo "You must be a root user" 2>&1 exit 1
 
 else
-	cp /root/public/stm32vl/build_stm32vl /usr/bin/build_stm32vl
-	cp /root/public/stm32vl/flash_stm32vl /usr/bin/flash_stm32vl
-	cp /root/public/stm32vl/edit_stm32vl /usr/bin/edit_stm32vl
-	cp /root/public/stm32vl/cp_stm32vl /usr/bin/cp_stm32vl
+	cp /root/MCU_toolchain_Linux_Android/stm32vl/build_stm32vl /usr/bin/build_stm32vl
+	cp /root/MCU_toolchain_Linux_Android/stm32vl/flash_stm32vl /usr/bin/flash_stm32vl
+	cp /root/MCU_toolchain_Linux_Android/stm32vl/edit_stm32vl /usr/bin/edit_stm32vl
+	cp /root/MCU_toolchain_Linux_Android/stm32vl/cp_stm32vl /usr/bin/cp_stm32vl
 fi
 

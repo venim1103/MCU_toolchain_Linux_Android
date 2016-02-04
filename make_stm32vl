@@ -8,8 +8,8 @@ else
         then
 		cd ~
 		git clone https://github.com/h0rr0rrdrag0n/stm32vldiscovery-linux-template.git
-		cp -avr /root/stm32vldiscovery-linux-template /root/public/stm32vl/Workspace/
-		cd /root/public/stm32vl/Workspace
+		cp -avr /root/stm32vldiscovery-linux-template /root/MCU_toolchain_Linux_Android/stm32vl/Workspace/
+		cd /root/MCU_toolchain_Linux_Android/stm32vl/Workspace
 		sed -i 's/TOOLS_PATH=/#/g' Makefile
 		sed -i 's/CC=$(TOOLS_PATH)/CC=$(TOOLS_PATH)\/usr/g' Makefile
 		sed -i 's/AS=$(TOOLS_PATH)/AS=$(TOOLS_PATH)\/usr/g' Makefile

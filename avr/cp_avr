@@ -1,2 +1,2 @@
 #!/bin/bash
-cp /mnt/mount/avr/main.c /root/public/avr/main.c
+cp /mnt/mount/avr/main.c /root/MCU_toolchain_Linux_Android/avr/main.c

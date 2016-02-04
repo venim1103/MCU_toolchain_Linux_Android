@@ -1,4 +1,4 @@
 #!/bin/bash
-cd /root/public/avr/
+cd /root/MCU_toolchain_Linux_Android/avr/
 make clean
 make

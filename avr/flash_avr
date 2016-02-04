@@ -1,4 +1,4 @@
 #!/bin/bash
 dfu-programmer atxmega128b1 erase
-dfu-programmer atxmega128b1 flash /home/root/public/avr/main.hex
+dfu-programmer atxmega128b1 flash /home/root/MCU_toolchain_Linux_Android/avr/main.hex
 

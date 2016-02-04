@@ -1,4 +1,4 @@
 #!/bin/bash
-cd /root/public/stm32/Workspace/
+cd /root/MCU_toolchain_Linux_Android/stm32/Workspace/
 make clean
 make
